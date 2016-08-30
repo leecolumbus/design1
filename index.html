@@ -19,6 +19,7 @@
 
         <!-- Custom styles for this template -->
         <link href="css/justified-nav.css" rel="stylesheet">
+        <link href="css/social-buttons.css" rel="stylesheet">
 
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!--[if lt IE 9]>
@@ -28,66 +29,81 @@
 
     </head>
     <body>
-        <div class="container stories-con">
+        <div class="col-md-12">
+            <div class="container stories-con">
 
-            <!-- The justified navigation menu is meant for single line per list item.
-          Multiple lines will require custom code not provided by Bootstrap. -->
+                <!-- The justified navigation menu is meant for single line per list item.
+              Multiple lines will require custom code not provided by Bootstrap. -->
 
+                <div class="container" id="header-con">
+                    <div class="row">
 
-            <div class="container" id="header-con">
-                <div class="row">
-
-                    <div class="masthead">
-                        <div class="row masthead-margin">
-                            <div class="col-md-6">
-                                <div class="col-md-6" id="banner-logo">
-                                    <img src="images/SYOS_100_100.png" class="img-responsive" alt="">
-                                </div>
-                                <div class="col-md-6 test" id="banner-text">
-                                                                      <div class="row">
-                                        <h3 class="text-muted" id="title">Suffolk Youth</h3>
+                        <div class="masthead">
+                            <div class="row masthead-margin">
+                                <div class="col-md-6">
+                                    <div class="col-md-6" id="banner-logo">
+                                        <img src="images/children-orange.png" class="img-responsive" alt="" style="width:65px; height:65px;">
                                     </div>
-                                    <div class="row">
-                                        <h3 class="text-muted" id="title">Offending Service</h3>
-                                    </div>
-                                    
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="row">
-                                    <nav>
-                                        <div id="navbar" class="navbar-collapse collapse">
-                                            <ul class="nav navbar-nav navbar-right nav-pad">
-                                                <li><a href="#" data-toggle="modal" data-target="#practitioner"><i class="fa fa-lock" aria-hidden="true"></i> Practitioners Portal</a></li>
-                                                <li><a href="#" data-toggle="modal" data-target="#volunteer"><i class="fa fa-lock" aria-hidden="true"></i> Volunteers Portal</a></li>
-                                            </ul>
+                                    <div class="col-md-6" id="banner-text">
+                                        <div class="row">
+                                            <h3 class="text-muted" id="title-line1">Suffolk Youth</h3>
                                         </div>
-                                    </nav>
+                                        <div class="row">
+                                            <h3 class="text-muted" id="title-line2">Offending Service</h3>
+                                        </div>
+
+                                    </div>
                                 </div>
-                                <div class="row" id="nav-social">
-                                    <a href="#" target="_blank"><img src="images/twitter.png"></a>
-                                    <a href="#" target="_blank"><img src="images/facebook.png"></a>
-                                    <a href="#" target="_blank"><img src="images/linkedin.png"></a>
-                                    <a href="#" target="_blank"><img src="images/google-plus.png"></a>
+                                <div class="col-md-6">
+                                    <div class="row">
+                                        <nav>
+                                            <div id="navbar" class="navbar-collapse collapse">
+                                                <ul class="nav navbar-nav navbar-right nav-pad portal-links">
+                                                    <li><a href="#" data-toggle="modal" data-target="#practitioner"><i class="fa fa-lock" aria-hidden="true"></i>&nbsp; Practitioners Portal</a></li>
+                                                    <li><a href="#" data-toggle="modal" data-target="#volunteer"><i class="fa fa-lock" aria-hidden="true"></i>&nbsp; Volunteers Portal</a></li>
+                                                </ul>
+                                            </div>
+                                        </nav>
+                                    </div>
+
+                                    <!-- Social Buttons
+                                     div class="row" id="nav-social">
+                                         <a href="#" target="_blank"><img src="images/twitter.png"></a>
+                                         <a href="#" target="_blank"><img src="images/facebook.png"></a>
+                                         <a href="#" target="_blank"><img src="images/linkedin.png"></a>
+                                         <a href="#" target="_blank"><img src="images/google-plus.png"></a>
+                                     </div> /-->
+
+                                    <!-- Search Box -->
+                                    <div class="row">
+                                        <div class="col-lg-6" id="search">
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" placeholder="Search...">
+                                                <span class="input-group-btn">
+                                                    <button class="btn btn-default search" type="button"><i class="fa fa-search" aria-hidden="true"></i></button>
+                                                </span>
+                                            </div><!-- /input-group -->
+                                        </div><!-- /.col-lg-6 -->
+                                    </div><!-- /.row -->
+
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <nav class="navbar navbar-default ">
-                <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                </div>
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse">
-                    <ul class="nav navbar-nav">
+                <nav class="navbar navbar-default ">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse">
+
                         <ul class="nav nav-justified">
                             <li class="active"><a href="#">Home</a></li>
                             <li><a href="#">Projects</a></li>
@@ -96,246 +112,246 @@
                             <li><a href="#">About</a></li>
                             <li><a href="#">Contact</a></li>
                         </ul>
+                    </div>
+                    <!-- /.navbar-collapse -->
+                </nav>
+
+                <!-- Jumbotron -->
+
+                <div class="jumbotron img-overlay">
+                    <div class="cover-overlay">
+                        <h1>Welcome</h1>
+                        <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet.</p>
+                        <p><a class="btn btn-lg btn-success" href="#" role="button">Get started today</a></p>
+                    </div>
                 </div>
-                <!-- /.navbar-collapse -->
-            </nav>
 
-            <!-- Jumbotron -->
-
-            <div class="jumbotron img-overlay">
-                <div class="cover-overlay">
-                    <h1>Welcome</h1>
-                    <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet.</p>
-                    <p><a class="btn btn-lg btn-success" href="#" role="button">Get started today</a></p>
-                </div>
-            </div>
-
-            <div class='container' id="stories">
-                <div class="row">
-                    <div class="col-md-3 panel1-md">
-                        <div class="panel panel-default icon" id='panel1'>
-                            <div class="panel-body">
-                                <div class="row text-left">
-                                    <h3>Youth Cautions</h3>
-                                    <p>Suffolk YOS works predominately with young people who have offended and been sentenced through the courts</p>  
-                                </div>
-                                <div class='row'>
-                                    <a href="#"> <i class="fa fa-arrow-circle-right fa-2x pull-right"></i></a>
+                <div class='container' id="stories">
+                    <div class="row">
+                        <div class="col-md-3 panel1-md">
+                            <div class="panel panel-default icon" id='panel1'>
+                                <div class="panel-body">
+                                    <div class="row text-left">
+                                        <h3>Menu Item</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+                                    </div>
+                                    <div class='row'>
+                                        <a href="#"> <i class="fa fa-arrow-circle-right fa-2x pull-right"></i></a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-3 panel2-md">
-                        <div class="panel panel-default icon" id='panel2'>
-                            <div class="panel-body">
-                                <div class="row text-left">
-                                    <h3>Restorative Justice</h3>
-                                    <p>Suffolk YOS works predominately with young people who have offended and been sentenced through the courts</p>  
-                                </div>
-                                <div class='row'>
-                                    <a href="#"> <i class="fa fa-arrow-circle-right fa-2x pull-right"></i></a>
+                        <div class="col-md-3 panel2-md">
+                            <div class="panel panel-default icon" id='panel2'>
+                                <div class="panel-body">
+                                    <div class="row text-left">
+                                        <h3>Menu Item</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+                                    </div>
+                                    <div class='row'>
+                                        <a href="#"> <i class="fa fa-arrow-circle-right fa-2x pull-right"></i></a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                        <div class="col-md-3 panel3-md">
+                            <div class="panel panel-default icon" id='panel3'>
+                                <div class="panel-body">
+                                    <div class="row text-left">
+                                        <h3>Menu Item</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+                                    </div>
+                                    <div class='row'>
+                                        <a href="#"> <i class="fa fa-arrow-circle-right fa-2x pull-right"></i></a>
+                                    </div>
+                                </div>
+                            </div></div>
+                        <div class="col-md-3 panel4-md">
+                            <div class="panel panel-default icon" id='panel4'>
+                                <div class="panel-body">
+                                    <div class="row text-left">
+                                        <h3>Menu Item</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+                                    </div>
+                                    <div class='row'>
+                                        <a href="#"> <i class="fa fa-arrow-circle-right fa-2x pull-right"></i></a>
+                                    </div>
+                                </div>
+                            </div></div>    
                     </div>
-                    <div class="col-md-3 panel3-md">
-                        <div class="panel panel-default icon" id='panel3'>
-                            <div class="panel-body">
-                                <div class="row text-left">
-                                    <h3>Referral Orders</h3>
-                                    <p>Suffolk YOS works predominately with young people who have offended and been sentenced through the courts</p>  
-                                </div>
-                                <div class='row'>
-                                    <a href="#"> <i class="fa fa-arrow-circle-right fa-2x pull-right"></i></a>
-                                </div>
-                            </div>
-                        </div></div>
-                    <div class="col-md-3 panel4-md">
-                        <div class="panel panel-default icon" id='panel4'>
-                            <div class="panel-body">
-                                <div class="row text-left">
-                                    <h3>Going to court</h3>
-                                    <p>Suffolk YOS works predominately with young people who have offended and been sentenced through the courts</p>  
-                                </div>
-                                <div class='row'>
-                                    <a href="#"> <i class="fa fa-arrow-circle-right fa-2x pull-right"></i></a>
+                    <div class="row">
+                        <div class="col-md-3 panel5-md">
+                            <div class="panel panel-default icon" id='panel5'>
+                                <div class="panel-body">
+                                    <div class="row text-left">
+                                        <h3>Menu Item</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+                                    </div>
+                                    <div class='row'>
+                                        <i class="fa fa-arrow-circle-right fa-2x pull-right" aria-hidden="true"></i>
+                                    </div>
                                 </div>
                             </div>
-                        </div></div>    
+                        </div>
+                        <div class="col-md-3 panel6-md">
+                            <div class="panel panel-default icon" id='panel6'>
+                                <div class="panel-body">
+                                    <div class="row text-left">
+                                        <h3>Menu Item</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+                                    </div>
+                                    <div class='row'>
+                                        <i class="fa fa-arrow-circle-right fa-2x pull-right" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 panel7-md">
+                            <div class="panel panel-default icon" id='panel7'>
+                                <div class="panel-body">
+                                    <div class="row text-left">
+                                        <h3>Menu Item</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+                                    </div>
+                                    <div class='row'>
+                                        <i class="fa fa-arrow-circle-right fa-2x pull-right" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div></div>
+                        <div class="col-md-3 panel8-md">
+                            <div class="panel panel-default icon" id='panel8'>
+                                <div class="panel-body">
+                                    <div class="row text-left">
+                                        <h3>Menu Item</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+                                    </div>
+                                    <div class='row'>
+                                        <i class="fa fa-arrow-circle-right fa-2x pull-right" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div></div>
+                    </div>
                 </div>
-                <div class="row">
-                    <div class="col-md-3 panel5-md">
-                        <div class="panel panel-default icon" id='panel5'>
-                            <div class="panel-body">
-                                <div class="row text-left">
-                                    <h3>Prevention</h3>
-                                    <p>Suffolk YOS works predominately with young people who have offended and been sentenced through the courts</p>  
-                                </div>
-                                <div class='row'>
-                                    <i class="fa fa-arrow-circle-right fa-2x pull-right" aria-hidden="true"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 panel6-md">
-                        <div class="panel panel-default icon" id='panel6'>
-                            <div class="panel-body">
-                                <div class="row text-left">
-                                    <h3>Parents</h3>
-                                    <p>Suffolk YOS works predominately with young people who have offended and been sentenced through the courts</p>  
-                                </div>
-                                <div class='row'>
-                                    <i class="fa fa-arrow-circle-right fa-2x pull-right" aria-hidden="true"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 panel7-md">
-                        <div class="panel panel-default icon" id='panel7'>
-                            <div class="panel-body">
-                                <div class="row text-left">
-                                    <h3>Volunteers</h3>
-                                    <p>Suffolk YOS works predominately with young people who have offended and been sentenced through the courts</p>  
-                                </div>
-                                <div class='row'>
-                                    <i class="fa fa-arrow-circle-right fa-2x pull-right" aria-hidden="true"></i>
-                                </div>
-                            </div>
-                        </div></div>
-                    <div class="col-md-3 panel8-md">
-                        <div class="panel panel-default icon" id='panel8'>
-                            <div class="panel-body">
-                                <div class="row text-left">
-                                    <h3>About us </h3>
-                                    <p>Suffolk YOS works predominately with young people who have offended and been sentenced through the courts</p>  
-                                </div>
-                                <div class='row'>
-                                    <i class="fa fa-arrow-circle-right fa-2x pull-right" aria-hidden="true"></i>
-                                </div>
-                            </div>
-                        </div></div>
-                </div>
-            </div>
 
-            <!-- Example row of columns -->
-            <div class="row">
-                <div class="col-md-4">
-                    <h2>Safari bug warning!</h2>
-                    <p class="text-danger">As of v9.1.2, Safari exhibits a bug in which resizing your browser horizontally causes rendering errors in the justified nav that are cleared upon refreshing.</p>
-                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-                    <p><a class="btn btn-primary" href="#" role="button">View details &raquo;</a></p>
-                </div>
-                <div class="col-md-4">
-                    <h2>Heading</h2>
-                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-                    <p><a class="btn btn-primary" href="#" role="button">View details &raquo;</a></p>
-                </div>
-                <div class="col-md-4">
-                    <h2>Heading</h2>
-                    <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.</p>
-                    <p><a class="btn btn-primary" href="#" role="button">View details &raquo;</a></p>
-                </div>
-            </div>
-
-            <!-- Site footer -->
-            <footer class="footer">
-                <p>&copy; 2016 Suffolk County Council</p>
-            </footer>
-
-        </div> <!-- /container -->
-
-        <!--Login Modals -->
-        <div class="modal fade" id="practitioner" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        <h4 class="modal-title" id="myModalLabel">Practitioner's Portal</h4>
-                        <p>This page is secured. Enter your credentials below and we will send you right along.</p>
+                <!-- Example row of columns -->
+                <div class="row" style="margin-top: 10px;">
+                    <div class="col-md-4">
+                       <h2>Heading</h2>
+                        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+                        <p><a class="btn btn-primary" href="#" role="button">View details &raquo;</a></p>
                     </div>
-                    <div class="modal-body">
-                        <div class="row">
-                            <div class="form-group">
-                                <label for="exampleInputEmail1">Email address</label>
-                                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
-                            </div>
-                            <div class="form-group">
-                                <label for="exampleInputPassword1">Password</label>
-                                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                    <div class="col-md-4">
+                        <h2>Heading</h2>
+                        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+                        <p><a class="btn btn-primary" href="#" role="button">View details &raquo;</a></p>
+                    </div>
+                    <div class="col-md-4">
+                        <h2>Heading</h2>
+                        <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.</p>
+                        <p><a class="btn btn-primary" href="#" role="button">View details &raquo;</a></p>
+                    </div>
+                </div>
+
+                <!-- Site footer -->
+                <footer class="footer">
+                    <p>&copy; 2016 Suffolk County Council</p>
+                </footer>
+
+            </div> <!-- /container -->
+
+            <!--Login Modals -->
+            <div class="modal fade" id="practitioner" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title" id="myModalLabel">Practitioner's Portal</h4>
+                            <p>This page is secured. Enter your credentials below and we will send you right along.</p>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Email address</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputPassword1">Password</label>
+                                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="modal-footer">
-                        <div class="row">
-                            <div class="col-md-4"><label class="checkbox-inline">
-                                    <input type="checkbox" id="inlineCheckbox1" value="option1"> Remember me
-                                </label></div>
-                            <div class="col-md-4"><u href='#'>I've lost my Password</u></div>
-                            <div class="col-md-4"><button type="button" class="btn btn-primary">Log-in</button></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="modal fade" id="volunteer" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        <h4 class="modal-title" id="myModalLabel">Volunteer's Portal</h4>
-                        <p>This page is secured. Enter your credentials below and we will send you right along.</p>
-                    </div>
-                    <div class="modal-body">
-                        <div class="row">
-                            <div class="form-group">
-                                <label for="exampleInputEmail1">Email address</label>
-                                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                        <div class="modal-footer">
+                            <div class="row">
+                                <div class="col-md-4"><label class="checkbox-inline">
+                                        <input type="checkbox" id="inlineCheckbox1" value="option1"> Remember me
+                                    </label></div>
+                                <div class="col-md-4"><u href='#'>I've lost my Password</u></div>
+                                <div class="col-md-4"><button type="button" class="btn btn-primary">Log-in</button></div>
                             </div>
-                            <div class="form-group">
-                                <label for="exampleInputPassword1">Password</label>
-                                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="modal-footer">
-                        <div class="row">
-                            <div class="col-md-4"><label class="checkbox-inline">
-                                    <input type="checkbox" id="inlineCheckbox1" value="option1"> Remember me
-                                </label></div>
-                            <div class="col-md-4"><u href='#'>I've lost my Password</u></div>
-                            <div class="col-md-4"><button type="button" class="btn btn-primary">Log-in</button></div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="modal fade" id="contact" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        <h4 class="modal-title" id="myModalLabel">Volunteer's Portal</h4>
-                        <p>This page is secured. Enter your credentials below and we will send you right along.</p>
-                    </div>
-                    <div class="modal-body">
-                        <div class="row">
-                            <div class="form-group">
-                                <label for="exampleInputEmail1">Email address</label>
-                                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+            <div class="modal fade" id="volunteer" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title" id="myModalLabel">Volunteer's Portal</h4>
+                            <p>This page is secured. Enter your credentials below and we will send you right along.</p>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Email address</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputPassword1">Password</label>
+                                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                                </div>
                             </div>
-                            <div class="form-group">
-                                <label for="exampleInputPassword1">Password</label>
-                                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                        </div>
+                        <div class="modal-footer">
+                            <div class="row">
+                                <div class="col-md-4"><label class="checkbox-inline">
+                                        <input type="checkbox" id="inlineCheckbox1" value="option1"> Remember me
+                                    </label></div>
+                                <div class="col-md-4"><u href='#'>I've lost my Password</u></div>
+                                <div class="col-md-4"><button type="button" class="btn btn-primary">Log-in</button></div>
                             </div>
                         </div>
                     </div>
-                    <div class="modal-footer">
-                        <div class="row">
-                            <div class="col-md-4"><label class="checkbox-inline">
-                                    <input type="checkbox" id="inlineCheckbox1" value="option1"> Remember me
-                                </label></div>
-                            <div class="col-md-4"><u href='#'>I've lost my Password</u></div>
-                            <div class="col-md-4"><button type="button" class="btn btn-primary">Log-in</button></div>
+                </div>
+            </div>
+            <div class="modal fade" id="contact" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title" id="myModalLabel">Volunteer's Portal</h4>
+                            <p>This page is secured. Enter your credentials below and we will send you right along.</p>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Email address</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputPassword1">Password</label>
+                                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <div class="row">
+                                <div class="col-md-4"><label class="checkbox-inline">
+                                        <input type="checkbox" id="inlineCheckbox1" value="option1"> Remember me
+                                    </label></div>
+                                <div class="col-md-4"><u href='#'>I've lost my Password</u></div>
+                                <div class="col-md-4"><button type="button" class="btn btn-primary">Log-in</button></div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -347,6 +363,8 @@
 
         <!-- Include all compiled plugins (below), or include individual files as needed -->
         <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/social-buttons.js"></script>
 
     </body>
 </html>
